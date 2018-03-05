@@ -1,0 +1,138 @@
+body {
+  background-color: rgb(41, 41, 41);
+}
+
+/*--------------------------------- HEADER -----------------------------------*/
+
+#logo {
+  max-width: 50px;
+  padding-right: 5px;
+}
+
+.navbar span {
+  color: rgb(130, 228, 112);
+}
+
+.top-nav {
+  background-color: rgb(41, 41, 41);
+  min-height: 90px;
+  transition: 0.5s ease-in;
+  -webkit-transition: 0.5s ease-in;
+  -moz-transition: 0.5s ease-in;
+}
+
+.top-nav .navbar-nav li .nav-link {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.5s ease-in;
+  -webkit-transition: 0.5s ease-in;
+  -moz-transition: 0.5s ease-in;
+}
+
+.top-nav li a.nav-link:hover, .top-nav .nav-item.active a.nav-link {
+  color: rgb(130, 228, 112);
+  transition: 0.5s ease-in;
+  -webkit-transition: 0.5s ease-in;
+  -moz-transition: 0.5s ease-in;
+}
+
+.top-nav .navbar-brand {
+  font-size: 30px;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+
+/*------------------------- CONTENIDO PRINCIPAL ------------------------------*/
+
+section {
+  margin-top: 90px
+}
+
+.intro .carousel-item::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100vh;
+}
+
+.carousel-item img {
+  width: 100%;
+  max-height: 550px;
+}
+
+.carousel-item img {
+  min-height: 250px;
+}
+
+.cuerpo {
+  margin-top: 30px;
+}
+
+h2 {
+  color: rgb(130, 228, 112);
+  margin-bottom: 30px;
+}
+
+.ui-controlgroup-horizontal .ui-spinner-input {
+  width: 20px;
+}
+
+.input-group, fieldset {
+  margin-bottom: 30px;
+}
+
+.input-group-addon {
+  background-color: rgb(130, 228, 112);
+}
+
+.fa {
+  color: rgb(41, 41, 41);
+}
+
+/*-------------------------------- FOOTER ------------------------------------*/
+
+footer {
+  margin-top: 30px;
+  background-color: rgb(130, 228, 112);
+  padding: 15px 10px;
+}
+
+footer .fa {
+  font-size: 25px;
+}
+
+footer .fa:hover {
+  color: white;
+}
+
+
+/*------------------------------ MEDIA QUERIES -------------------------------*/
+
+@media (max-width: 767px) {
+  .intro .carousel-caption {
+    top: 10%;
+  }
+  .widget.widget-counter .container {
+    width: 100%;
+  }
+  .contact-section #map {
+    height: 400px
+  }
+  .intro .display-4 {
+    font-size: 2rem;
+  }
+  .intro p {
+    display: none;
+  }
+  .intro img {
+    height: 100%;
+  }
+  .top-nav .navbar-toggler i {
+    color: white;
+  }
+  .top-nav .navbar-collapse.show a {
+    color: white;
+  }
+}
