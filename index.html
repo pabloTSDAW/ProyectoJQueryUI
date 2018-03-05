@@ -11,14 +11,16 @@
   <!-- Bootstrap CSS -->
   <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css' integrity='sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb' crossorigin='anonymous'>
   <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' integrity='sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN' crossorigin='anonymous'>
-  <link href='https://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet'>
   <link rel="icon" type="image/x-icon" href="images/logo1.png">
   <link rel="stylesheet" href="style/css.css">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <link rel="stylesheet" href="style/animate.css">
-  <link id="estilos" type="text/css" rel="stylesheet" href="themes/mintchoc/jquery-ui.css"/>
+  <link id="estilos" type="text/css" rel="stylesheet" href="themes/mintchoc/jquery-ui.css" />
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 
 </head>
 
@@ -96,7 +98,7 @@
   <div class="container cuerpo">
     <h2 class="text-center animated fadeIn">Reserva ya tu vehículo</h2>
     <form>
-      <div class="form-row animated fadeIn">
+      <div class="form-row wow slideInLeft">
         <div class="col-12 col-sm-6 col-lg-4">
           <div class="input-group">
             <span class="input-group-addon" id="nombreInfo"><i class="fa fa-male"></i></span>
@@ -139,7 +141,7 @@
       <div class="form-row">
 
       </div>
-      <div class="form-row animated fadeIn">
+      <div class="form-row wow slideInRight">
         <div class="col-12 col-sm-6 col-lg-4">
           <div class="input-group">
             <span class="input-group-addon" id="fechaInfo"><i class="fa fa-calendar"></i></span>
@@ -153,7 +155,7 @@
           </div>
         </div>
       </div>
-      <div class="row text-center m-3 animated fadeIn">
+      <div class="row text-center m-3 wow slideInUp">
         <div class="col-12">
           <button type="button" id="aceptar" class="btn btn-outline-success">Aceptar</button>
           <button type="reset" id="borrar" class="btn btn-outline-danger">Borrar</button>
@@ -172,7 +174,7 @@
 
   <footer>
     <p class="text-center text-center">Pablo Prieto Álvarez &nbsp;
-    <a href="https://github.com/pabloTSDAW"><span class="fa fa-github"></span></a>
+      <a href="https://github.com/pabloTSDAW"><span class="fa fa-github"></span></a>
     </p>
   </footer>
 
