@@ -35,13 +35,14 @@ $(function() {
     resizable: false,
     height: "auto",
     show: {
-      effect: "clip",
+      effect: "puff",
       duration: 500,
       easing: 'linear',
       queue: false
     },
     hide: {
-      effect: "puff",
+      effect: "explode",
+      pieces: 15,
       duration: 1000,
       easing: 'linear',
       queue: false
