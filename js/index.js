@@ -1,30 +1,3 @@
-/*----------------------------------- TEMAS --------------------------------------*/
-
-$(".light").click(function() {
-  if ($('#estilos').attr("href") != 'themes/light/jquery-ui.css') {
-    $('#estilos').attr("href", "themes/light/jquery-ui.css");
-  }
-});
-
-$(".dark").click(function() {
-  if ($('#estilos').attr("href") != 'themes/darkness/jquery-ui.css') {
-    $('#estilos').attr("href", "themes/darkness/jquery-ui.css");
-  }
-});
-
-$(".mintchoc").click(function() {
-  if ($('#estilos').attr("href") != 'themes/mintchoc/jquery-ui.css') {
-    $('#estilos').attr("href", "themes/mintchoc/jquery-ui.css");
-  }
-});
-
-$(".lefrog").click(function() {
-  if ($('#estilos').attr("href") != 'themes/lefrog/jquery-ui.css') {
-    $('#estilos').attr("href", "themes/lefrog/jquery-ui.css");
-  }
-});
-
-
 /*----------------------------- AUTOCOMPLETE ---------------------------------*/
 
 var marcas = [];
@@ -63,11 +36,15 @@ $(function() {
     height: "auto",
     show: {
       effect: "clip",
-      duration: 500
+      duration: 500,
+      easing: 'linear',
+      queue: false
     },
     hide: {
       effect: "puff",
-      duration: 1000
+      duration: 1000,
+      easing: 'linear',
+      queue: false
     },
     buttons: {
       "Aceptar": function() {
@@ -83,40 +60,6 @@ $(function() {
   });
   $("#aceptar").on("click", function() {
     $("#dialog").dialog("open");
-  });
-});
-
-
-$(function() {
-  $("#dialogMain").dialog({
-    modal: true,
-    resizable: false,
-    height: "auto",
-    show: {
-      effect: "clip",
-      duration: 500
-    },
-    hide: {
-      effect: "explode",
-      duration: 1000
-    },
-    buttons: {
-      "Light": function() {
-        if ($('#estilos').attr("href") != 'themes/light/jquery-ui.css') {
-          $('#estilos').attr("href", "themes/light/jquery-ui.css");
-        }
-      },
-      "Dark": function() {
-        if ($('#estilos').attr("href") != 'themes/darkness/jquery-ui.css') {
-          $('#estilos').attr("href", "themes/darkness/jquery-ui.css");
-        }
-      },
-      "LeFrog": function() {
-        if ($('#estilos').attr("href") != 'themes/lefrog/jquery-ui.css') {
-          $('#estilos').attr("href", "themes/lefrog/jquery-ui.css");
-        }
-      }
-    }
   });
 });
 

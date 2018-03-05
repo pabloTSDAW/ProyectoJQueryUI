@@ -16,7 +16,9 @@
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <link rel="stylesheet" href="style/animate.css">
-  <link id="estilos" type="text/css" rel="stylesheet" href="themes/mintchoc/jquery-ui.css" />
+  <link id="estilos" type="text/css" rel="stylesheet" href="themes/mintchoc/jquery-ui.css"/>
+  <link id="estilos1" type="text/css" rel="stylesheet" href="themes/lefrog/jquery-ui.css"/>
+  <link id="estilos2" type="text/css" rel="stylesheet" href="themes/darkness/jquery-ui.css"/>
   <script src="js/wow.min.js"></script>
   <script>
     new WOW().init();
@@ -129,7 +131,7 @@
             <input required type="text" name="marca" class="form-control" id="marcaCoche" aria-describedby="marcaHelp" placeholder="Marca" required>
           </div>
         </div>
-        <div class="col-12 col-lg-4">
+        <div class="col-12 col-lg-4 mintchoc">
           <fieldset>
             <label for="radio-1">Automático</label>
             <input type="radio" name="radio-1" id="radio-1">
@@ -137,9 +139,6 @@
             <input type="radio" name="radio-1" id="radio-2">
           </fieldset>
         </div>
-      </div>
-      <div class="form-row">
-
       </div>
       <div class="form-row wow slideInRight">
         <div class="col-12 col-sm-6 col-lg-4">
@@ -154,6 +153,14 @@
             <input type="text" class="form-control" id="fechaFin" placeholder="Fin alquiler" required></p>
           </div>
         </div>
+        <div class="col-12 col-lg-4 lefrog">
+          <fieldset>
+            <label for="radio-3">Hombre</label>
+            <input type="radio" name="radio-3" id="radio-3">
+            <label for="radio-4">Mujer</label>
+            <input type="radio" name="radio-3" id="radio-4">
+          </fieldset>
+        </div>
       </div>
       <div class="row text-center m-3 wow slideInUp">
         <div class="col-12">
@@ -166,10 +173,6 @@
 
   <div id="dialog" title="Aceptar">
     <p>Petición enviada con éxito. En breve recibirá un correo de confirmación con los detalles de su alquiler.</p>
-  </div>
-
-  <div id="dialogMain" title="Aceptar" class="text-center">
-    <p>Bienvenido a RENTaCAR. Antes de empezar, elija un tema: <br>(por defecto se usará el tema MintChoc)</p>
   </div>
 
   <footer>
